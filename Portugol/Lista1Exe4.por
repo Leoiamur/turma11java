@@ -1,5 +1,6 @@
 programa
 {
+	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
@@ -17,8 +18,8 @@ programa
 		escreva("Digite o terceiro número: ")
 		leia(numC)
 
-		numR = (numA + numB) * (numA + numB)
-		numS = (numB + numC) * (numB + numC)
+		numR = mat.potencia((numA + numB), 2)
+		numS = mat.potencia((numB + numC), 2)
 
 		res = (numR + numS) / 2
 
@@ -30,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 433; 
+ * @POSICAO-CURSOR = 473; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
