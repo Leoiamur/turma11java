@@ -3,12 +3,10 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro anos
-		inteiro meses
-		inteiro dias
-		inteiro totalDias
-
-		totalDias = 0
+		inteiro anos=0
+		inteiro meses=0
+		inteiro dias=0
+		inteiro totalDias=0
 		
 		escreva("Digite os anos da sua idade: ")
 		leia(anos)
@@ -29,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 115; 
+ * @POSICAO-CURSOR = 106; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
