@@ -23,6 +23,7 @@ public class QuartoPrograma {
 		
 		System.out.printf("Olá, %s, você tem %d anos de idade e seu salário é de R$ %.2f.", nome, idade, salario);
 
+	scan.close();
 	}
 
 }

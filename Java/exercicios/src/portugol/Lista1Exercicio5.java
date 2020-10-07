@@ -21,6 +21,7 @@ public class Lista1Exercicio5 {
 		
 		System.out.printf("A média é %.2f.", media);
 
+		scan.close();
 	}
 
 }

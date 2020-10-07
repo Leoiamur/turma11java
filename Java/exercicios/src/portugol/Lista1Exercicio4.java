@@ -25,6 +25,7 @@ public class Lista1Exercicio4 {
 		
 		System.out.printf("O resultado da expressão é %.2f.", res);
 
+		scan.close();
 	}
 
 }

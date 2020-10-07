@@ -31,6 +31,7 @@ public class Lista1Exercicio7 {
 		System.out.println();
 		System.out.printf("O valor de 'Y' é: %.2f", y);
 
+		scan.close();
 	}
 
 }

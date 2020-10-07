@@ -19,6 +19,7 @@ public class Lista1Exercicio2 {
 		
 		System.out.printf("Você tem %d anos, %d meses e %d dias.", idadeEmAnos, idadeEmMeses, idadeEmDias);
 
+		scan.close();
 	}
 
 }

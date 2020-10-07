@@ -23,6 +23,7 @@ public class Lista1Exercicio8 {
 		
 		System.out.printf("O custo desse carro ao consumidor será: RS%.2f.", custoCons);
 
+		scan.close();
 	}
 
 }

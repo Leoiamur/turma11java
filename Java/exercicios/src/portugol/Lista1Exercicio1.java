@@ -21,6 +21,7 @@ public class Lista1Exercicio1 {
 		
 		System.out.printf("Sua idade total em dias é: %d", totalDias);
 
+	scan.close();
 	}
 
 }

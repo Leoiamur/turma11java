@@ -19,6 +19,7 @@ public class Lista1Exercicio3 {
 		
 		System.out.printf("O evento durou %d horas, %d minutos e %d segundos.", horas, minutos, segundos);
 
+		scan.close();
 	}
 
 }

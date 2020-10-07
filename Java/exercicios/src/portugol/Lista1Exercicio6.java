@@ -26,6 +26,7 @@ public class Lista1Exercicio6 {
 		
 		System.out.printf("O resultado do cáculo é: %.2f.", d);
 
+		scan.close();
 	}
 
 }
