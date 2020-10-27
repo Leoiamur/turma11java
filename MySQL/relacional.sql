@@ -20,3 +20,7 @@ CREATE TABLE Carro(
 	insert into Carro (Nome, Marca, Id_Pessoa) values 
     ('Gol', 'Wolks',2 ), 
     ('Palio', 'Fiat', 3);
+    
+    select * from Pessoas
+    inner join Carro
+    where Pessoas.ID_Pessoa = Carro.ID_Pessoa;
