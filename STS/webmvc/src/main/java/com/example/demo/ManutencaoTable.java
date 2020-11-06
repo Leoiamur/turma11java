@@ -13,6 +13,7 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+//CRIANDO A TABELA
 @Entity
 @Table(name = "tb_manutencao")
 public class ManutencaoTable {
@@ -25,6 +26,9 @@ public class ManutencaoTable {
 	@Column
 	@NotNull
 	private String nome;
+	
+	@Column
+	private String categoria;
 	
 	@Column
 	@JsonFormat(pattern="yyyy-mm-dd")
@@ -55,6 +59,12 @@ public class ManutencaoTable {
 	}
 	public void setPago(boolean pago) {
 		this.pago = pago;
+	}
+	public String getCategoria() {
+		return categoria;
+	}
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
 	}
 
 }
