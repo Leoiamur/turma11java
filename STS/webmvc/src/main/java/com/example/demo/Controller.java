@@ -40,10 +40,18 @@ public class Controller implements WebMvcConfigurer {
 	}
 	
 	//PATHVARIABLE SERVE PARA PEGAR O PARÂMETRO
-	@GetMapping("/manutencoes/{id}")
+	//deste jeito nao retornar erro
+	@GetMapping("/manutencoes/id/{id}")
 	public Optional<ManutencaoTable> buscarUm(@PathVariable Long id) {
 		return repository.findById(id);
 	}
+		
+//		@GetMapping("/manutencoes/id/{id}")
+//		public ResponseEntity<ManutencaoTable> getById(@PathVariable long id){
+//			return repository.findById(id).map(resp -> ResponseEntity.ok(resp))
+//					.orElse(ResponseEntity.notFound().build());
+//		}
+
 	
 	//ATUALIZAR, PRIMEIRO PEGA COM O @PATHVARIABLE, DEPOIS INSERE COM O @REQUESTBODY
 	@PutMapping("/manutencoes/{id}")

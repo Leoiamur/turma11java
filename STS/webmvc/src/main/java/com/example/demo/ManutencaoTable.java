@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 //CRIANDO A TABELA
 @Entity
-@Table(name = "tb_manutencao")
+@Table(name = "tb_manutencao_crud")
 public class ManutencaoTable {
 	
 	@Column

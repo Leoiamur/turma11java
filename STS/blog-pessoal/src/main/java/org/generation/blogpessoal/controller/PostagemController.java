@@ -25,6 +25,26 @@ public class PostagemController {
 	@Autowired
 	private PostagemRepository repository;
 	
+	@GetMapping(value = "/maior")
+	public ResponseEntity<List<Postagem>> findAllMaior(){
+		return ResponseEntity.ok(repository.findAllMaior());
+	}
+	
+	@GetMapping(value = "/ordem")
+	public ResponseEntity<List<Postagem>> anosDesc(){
+		return ResponseEntity.ok(repository.anosDesc());
+	}
+	
+	@GetMapping(value = "/asc")
+	public ResponseEntity<List<Postagem>> anosAsc(){
+		return ResponseEntity.ok(repository.anosAsc());
+	}
+	
+	@GetMapping(value = "/intervalo")
+	public ResponseEntity<List<Postagem>> anosIntervalo(){
+		return ResponseEntity.ok(repository.anosIntervalo());
+	}
+	
 	@GetMapping
 	public ResponseEntity<List<Postagem>> GetAll() {
 		return ResponseEntity.ok(repository.findAll());
