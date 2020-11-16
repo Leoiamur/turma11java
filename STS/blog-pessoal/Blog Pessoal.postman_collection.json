@@ -9,16 +9,22 @@
 			"name": "GET_BLOG_PESSOAL",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Q2FybG9zIDI1OjEyMzQ1Njc4OQ==",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "http://localhost:8081/tema",
+					"raw": "http://localhost:8080/postagens",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8080",
 					"path": [
-						"tema"
+						"postagens"
 					]
 				}
 			},
@@ -95,6 +101,64 @@
 					"path": [
 						"postagens",
 						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_CADASTRAR_BLOG_PESSOAL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Carlos Andrade\",\r\n    \"usuario\": \"Carlos 25\",\r\n    \"senha\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/cadastrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_LOGAR_BLOG_PESSOAL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"Carlos 25\",\r\n    \"senha\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/logar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"logar"
 					]
 				}
 			},
